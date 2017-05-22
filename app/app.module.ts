@@ -18,8 +18,8 @@ import { ProductFilterPipe } from './products/product-filter.pipe';
     HttpModule,
     RouterModule.forRoot([
       { path: 'welcome', component: WelcomeComponent },
+      { path: 'products/:id', component: ProductDetailComponent },
       { path: 'products', component: ProductListComponent },
-      { path: 'product/:id', component: ProductDetailComponent },
       { path: '', redirectTo: 'welcome', pathMatch: 'full' },
       { path: '**', redirectTo: 'welcome', pathMatch: 'full' }
     ])

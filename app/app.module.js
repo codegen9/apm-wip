@@ -30,8 +30,8 @@ AppModule = __decorate([
             http_1.HttpModule,
             router_1.RouterModule.forRoot([
                 { path: 'welcome', component: welcome_component_1.WelcomeComponent },
+                { path: 'products/:id', component: product_detail_component_1.ProductDetailComponent },
                 { path: 'products', component: product_list_component_1.ProductListComponent },
-                { path: 'product/:id', component: product_detail_component_1.ProductDetailComponent },
                 { path: '', redirectTo: 'welcome', pathMatch: 'full' },
                 { path: '**', redirectTo: 'welcome', pathMatch: 'full' }
             ])
